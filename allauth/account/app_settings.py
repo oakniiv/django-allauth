@@ -157,7 +157,7 @@ class AppSettings(object):
     def SIGNUP_REDIRECT_URL(self):
         from django.conf import settings
 
-        return self._setting("SIGNUP_REDIRECT_URL", settings.LOGIN_REDIRECT_URL)
+        return self._setting("SIGNUP_REDIRECT_URL", settings.SIGNUP_REDIRECT_URL)
 
     @property
     def PASSWORD_MIN_LENGTH(self):
